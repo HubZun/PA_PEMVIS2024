@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 10 Bulan Mei 2024 pada 09.55
--- Versi server: 10.4.28-MariaDB
--- Versi PHP: 8.2.4
+-- Generation Time: May 10, 2024 at 04:19 PM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.0.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,33 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `user`
+-- Table structure for table `produk`
+--
+
+CREATE TABLE `produk` (
+  `id_produk` int(11) NOT NULL,
+  `nama_produk` varchar(255) NOT NULL,
+  `harga_produk` int(100) NOT NULL,
+  `kategori_produk` varchar(100) NOT NULL,
+  `status_produk` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `produk`
+--
+
+INSERT INTO `produk` (`id_produk`, `nama_produk`, `harga_produk`, `kategori_produk`, `status_produk`) VALUES
+(1, 'asdaf', 123, 'Minuman', 'Ready'),
+(2, 'asdaf', 123, 'Minuman', 'Ready'),
+(3, 'asdaf', 123, 'Minuman', 'Ready'),
+(4, 'asdaf', 123, 'Minuman', 'Ready'),
+(5, 'pizza', 20001, 'Makanan', 'Ready'),
+(6, 'akdkawd', 1230, 'Makanan', 'Not Ready');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
 --
 
 CREATE TABLE `user` (
@@ -34,7 +60,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `user`
+-- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`id_user`, `username`, `password`) VALUES
@@ -45,17 +71,29 @@ INSERT INTO `user` (`id_user`, `username`, `password`) VALUES
 --
 
 --
--- Indeks untuk tabel `user`
+-- Indexes for table `produk`
+--
+ALTER TABLE `produk`
+  ADD PRIMARY KEY (`id_produk`);
+
+--
+-- Indexes for table `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id_user`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `user`
+-- AUTO_INCREMENT for table `produk`
+--
+ALTER TABLE `produk`
+  MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
   MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;

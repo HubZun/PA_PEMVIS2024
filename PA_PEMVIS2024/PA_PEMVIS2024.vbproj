@@ -120,6 +120,12 @@
     <Compile Include="staffForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="updateProduct.Designer.vb">
+      <DependentUpon>updateProduct.vb</DependentUpon>
+    </Compile>
+    <Compile Include="updateProduct.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="addProduct.resx">
@@ -142,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="staffForm.resx">
       <DependentUpon>staffForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateProduct.resx">
+      <DependentUpon>updateProduct.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

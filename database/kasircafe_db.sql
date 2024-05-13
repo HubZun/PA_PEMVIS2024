@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 10, 2024 at 04:19 PM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.0.28
+-- Waktu pembuatan: 13 Bulan Mei 2024 pada 13.15
+-- Versi server: 10.4.28-MariaDB
+-- Versi PHP: 8.0.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `produk`
+-- Struktur dari tabel `produk`
 --
 
 CREATE TABLE `produk` (
@@ -32,25 +32,25 @@ CREATE TABLE `produk` (
   `nama_produk` varchar(255) NOT NULL,
   `harga_produk` int(100) NOT NULL,
   `kategori_produk` varchar(100) NOT NULL,
-  `status_produk` varchar(100) NOT NULL
+  `status_produk` varchar(100) NOT NULL,
+  `gambar` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `produk`
+-- Dumping data untuk tabel `produk`
 --
 
-INSERT INTO `produk` (`id_produk`, `nama_produk`, `harga_produk`, `kategori_produk`, `status_produk`) VALUES
-(1, 'asdaf', 123, 'Minuman', 'Ready'),
-(2, 'asdaf', 123, 'Minuman', 'Ready'),
-(3, 'asdaf', 123, 'Minuman', 'Ready'),
-(4, 'asdaf', 123, 'Minuman', 'Ready'),
-(5, 'pizza', 20001, 'Makanan', 'Ready'),
-(6, 'akdkawd', 1230, 'Makanan', 'Not Ready');
+INSERT INTO `produk` (`id_produk`, `nama_produk`, `harga_produk`, `kategori_produk`, `status_produk`, `gambar`) VALUES
+(7, 'drgtrewfdfeqsfaw', 800055, 'Makanan', 'Ready', 'download (3).jpg'),
+(9, ' dvvvvvvvvvvvvvvvvvvv', 1421, 'Makanan', 'Ready', 'download (3).jpg'),
+(10, 'dwefsrdgf', 4235, 'Minuman', 'Not Ready', 'download (5).jpg'),
+(11, 'gtythgfdse', 42355, 'Makanan', 'Ready', 'ღ.jpg'),
+(12, 'fetyukjk', 3243567, 'Makanan', 'Ready', 'download (4).jpg');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Struktur dari tabel `user`
 --
 
 CREATE TABLE `user` (
@@ -60,7 +60,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `user`
+-- Dumping data untuk tabel `user`
 --
 
 INSERT INTO `user` (`id_user`, `username`, `password`) VALUES
@@ -71,29 +71,29 @@ INSERT INTO `user` (`id_user`, `username`, `password`) VALUES
 --
 
 --
--- Indexes for table `produk`
+-- Indeks untuk tabel `produk`
 --
 ALTER TABLE `produk`
   ADD PRIMARY KEY (`id_produk`);
 
 --
--- Indexes for table `user`
+-- Indeks untuk tabel `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id_user`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `produk`
+-- AUTO_INCREMENT untuk tabel `produk`
 --
 ALTER TABLE `produk`
-  MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
   MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;

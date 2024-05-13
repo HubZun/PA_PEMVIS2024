@@ -1,4 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
+Imports System.IO
 
 Public Class adminForm
     Dim count As String
@@ -42,13 +43,13 @@ Public Class adminForm
 
 
     Public Sub addItemsFromDb()
+        dgvProduk.Rows.Clear()
+
         Dim query = "select * from produk"
         cmd = New MySqlCommand(query, conn)
         rd = cmd.ExecuteReader
         While rd.Read()
-            dgvProduk.Rows.Add(rd.Item(1), rd.Item(2), rd.Item(3), rd.Item(4))
-
-
+            dgvProduk.Rows.Add(rd.Item(0), rd.Item(1), rd.Item(2), rd.Item(3), rd.Item(4), rd.Item(5))
         End While
     End Sub
 
@@ -56,10 +57,6 @@ Public Class adminForm
     Private Sub admin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         koneksi()
         addItemsFromDb()
-        
-
-
-
         pnlOnBtnStf.Height = 0
         pnlOnBtnPrf.Height = 0
         pnlOnBtnLgt.Height = 0
@@ -72,5 +69,23 @@ Public Class adminForm
 
     End Sub
 
+    Private Sub dgvProduk_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvProduk.CellClick
 
+        If dgvProduk.SelectedRows.Count > 0 Then
+            Dim row As DataGridViewRow = dgvProduk.SelectedRows(0)
+            updateProduct.txtId.Text = row.Cells(0).Value
+            updateProduct.txtNamaProduk.Text = row.Cells(1).Value
+            updateProduct.txtHargaProduk.Text = row.Cells(2).Value
+            updateProduct.cboKategoriProduk.Text = row.Cells(3).Value
+            updateProduct.cboStatusProduk.Text = row.Cells(4).Value
+            updateProduct.Label1.Text = row.Cells(5).Value
+            updateProduct.Show()
+
+        End If
+
+    End Sub
+
+    Private Sub dgvProduk_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvProduk.CellContentClick
+
+    End Sub
 End Class

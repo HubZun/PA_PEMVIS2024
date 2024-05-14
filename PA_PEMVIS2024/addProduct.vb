@@ -8,7 +8,6 @@ Public Class addProduct
         txtNamaProduk.Clear()
         cboKategoriProduk.SelectedIndex = -1
         cboStatusProduk.SelectedIndex = -1
-
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click

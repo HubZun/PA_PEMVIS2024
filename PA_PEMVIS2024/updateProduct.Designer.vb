@@ -35,6 +35,7 @@ Partial Class updateProduct
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtId = New System.Windows.Forms.TextBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -57,20 +58,20 @@ Partial Class updateProduct
         '
         'btnAdd
         '
-        Me.btnAdd.Location = New System.Drawing.Point(354, 343)
+        Me.btnAdd.Location = New System.Drawing.Point(254, 343)
         Me.btnAdd.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(100, 28)
+        Me.btnAdd.Size = New System.Drawing.Size(89, 28)
         Me.btnAdd.TabIndex = 14
         Me.btnAdd.Text = "Update"
         Me.btnAdd.UseVisualStyleBackColor = True
         '
         'btnCancel
         '
-        Me.btnCancel.Location = New System.Drawing.Point(158, 343)
+        Me.btnCancel.Location = New System.Drawing.Point(155, 343)
         Me.btnCancel.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(100, 28)
+        Me.btnCancel.Size = New System.Drawing.Size(91, 28)
         Me.btnCancel.TabIndex = 15
         Me.btnCancel.Text = "Cancel"
         Me.btnCancel.UseVisualStyleBackColor = True
@@ -158,11 +159,21 @@ Partial Class updateProduct
         Me.txtId.Size = New System.Drawing.Size(100, 22)
         Me.txtId.TabIndex = 18
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(359, 343)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(92, 28)
+        Me.Button2.TabIndex = 19
+        Me.Button2.Text = "Hapus"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'updateProduct
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(606, 428)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.txtId)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
@@ -195,4 +206,5 @@ Partial Class updateProduct
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents txtId As System.Windows.Forms.TextBox
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 End Class

@@ -36,4 +36,17 @@ Public Class updateProduct
     Private Sub updateProduct_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        koneksi()
+        Dim CMD As MySqlCommand
+        CMD = New MySqlCommand("DELETE FROM produk WHERE id_produk='" & txtId.Text & "'", conn)
+        CMD.ExecuteNonQuery()
+        MsgBox("berhasil dihapus")
+        adminForm.Show()
+        clear()
+        rd.Close()
+        adminForm.addItemsFromDb()
+        Me.Close()
+    End Sub
 End Class

@@ -34,15 +34,16 @@ Partial Class addProduct
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'cboStatusProduk
         '
         Me.cboStatusProduk.FormattingEnabled = True
         Me.cboStatusProduk.Items.AddRange(New Object() {"Ready", "Not Ready"})
-        Me.cboStatusProduk.Location = New System.Drawing.Point(137, 212)
-        Me.cboStatusProduk.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboStatusProduk.Location = New System.Drawing.Point(38, 214)
+        Me.cboStatusProduk.Margin = New System.Windows.Forms.Padding(4)
         Me.cboStatusProduk.Name = "cboStatusProduk"
         Me.cboStatusProduk.Size = New System.Drawing.Size(295, 24)
         Me.cboStatusProduk.TabIndex = 2
@@ -51,8 +52,8 @@ Partial Class addProduct
         '
         Me.cboKategoriProduk.FormattingEnabled = True
         Me.cboKategoriProduk.Items.AddRange(New Object() {"Makanan", "Minuman"})
-        Me.cboKategoriProduk.Location = New System.Drawing.Point(139, 158)
-        Me.cboKategoriProduk.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboKategoriProduk.Location = New System.Drawing.Point(40, 160)
+        Me.cboKategoriProduk.Margin = New System.Windows.Forms.Padding(4)
         Me.cboKategoriProduk.Name = "cboKategoriProduk"
         Me.cboKategoriProduk.Size = New System.Drawing.Size(295, 24)
         Me.cboKategoriProduk.TabIndex = 2
@@ -60,7 +61,7 @@ Partial Class addProduct
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(135, 191)
+        Me.Label8.Location = New System.Drawing.Point(36, 193)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(48, 17)
@@ -69,8 +70,8 @@ Partial Class addProduct
         '
         'txtHargaProduk
         '
-        Me.txtHargaProduk.Location = New System.Drawing.Point(137, 94)
-        Me.txtHargaProduk.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtHargaProduk.Location = New System.Drawing.Point(38, 96)
+        Me.txtHargaProduk.Margin = New System.Windows.Forms.Padding(4)
         Me.txtHargaProduk.Name = "txtHargaProduk"
         Me.txtHargaProduk.Size = New System.Drawing.Size(296, 22)
         Me.txtHargaProduk.TabIndex = 1
@@ -78,7 +79,7 @@ Partial Class addProduct
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(135, 138)
+        Me.Label7.Location = New System.Drawing.Point(36, 140)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(61, 17)
@@ -88,7 +89,7 @@ Partial Class addProduct
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(133, 73)
+        Me.Label6.Location = New System.Drawing.Point(34, 75)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(45, 17)
@@ -97,8 +98,8 @@ Partial Class addProduct
         '
         'txtNamaProduk
         '
-        Me.txtNamaProduk.Location = New System.Drawing.Point(137, 39)
-        Me.txtNamaProduk.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtNamaProduk.Location = New System.Drawing.Point(38, 41)
+        Me.txtNamaProduk.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNamaProduk.Name = "txtNamaProduk"
         Me.txtNamaProduk.Size = New System.Drawing.Size(296, 22)
         Me.txtNamaProduk.TabIndex = 1
@@ -106,7 +107,7 @@ Partial Class addProduct
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(133, 18)
+        Me.Label5.Location = New System.Drawing.Point(34, 20)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(45, 17)
@@ -115,8 +116,8 @@ Partial Class addProduct
         '
         'btnCancel
         '
-        Me.btnCancel.Location = New System.Drawing.Point(139, 304)
-        Me.btnCancel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnCancel.Location = New System.Drawing.Point(40, 306)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(100, 28)
         Me.btnCancel.TabIndex = 3
@@ -125,8 +126,8 @@ Partial Class addProduct
         '
         'btnAdd
         '
-        Me.btnAdd.Location = New System.Drawing.Point(335, 304)
-        Me.btnAdd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnAdd.Location = New System.Drawing.Point(236, 306)
+        Me.btnAdd.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(100, 28)
         Me.btnAdd.TabIndex = 3
@@ -139,28 +140,29 @@ Partial Class addProduct
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(357, 261)
+        Me.Button1.Location = New System.Drawing.Point(473, 287)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 4
         Me.Button1.Text = "Browse"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Label1
+        'PictureBox1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(139, 266)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(51, 17)
-        Me.Label1.TabIndex = 5
-        Me.Label1.Text = "Label1"
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox1.Location = New System.Drawing.Point(400, 20)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(231, 239)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 5
+        Me.PictureBox1.TabStop = False
         '
         'addProduct
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(639, 375)
-        Me.Controls.Add(Me.Label1)
+        Me.ClientSize = New System.Drawing.Size(666, 419)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.btnCancel)
@@ -172,9 +174,10 @@ Partial Class addProduct
         Me.Controls.Add(Me.txtHargaProduk)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label7)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "addProduct"
         Me.Text = "addProduct"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -191,5 +194,5 @@ Partial Class addProduct
     Friend WithEvents btnAdd As System.Windows.Forms.Button
     Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 End Class

@@ -18,4 +18,8 @@ Module module1
             messagebox.show(ex.message)
         End Try
     End Sub
+
+    Public jumlahUang As Integer
+
+
 End Module

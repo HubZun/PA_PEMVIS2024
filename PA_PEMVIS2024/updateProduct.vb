@@ -11,8 +11,16 @@ Public Class updateProduct
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         koneksi()
-        Dim query = "UPDATE produk SET nama_produk = '" & txtNamaProduk.Text & "', harga_produk = '" & txtHargaProduk.Text & "', kategori_produk = '" & cboKategoriProduk.SelectedItem & "', status_produk = '" & cboStatusProduk.SelectedItem & "', gambar = '" & Label1.Text & "' WHERE id_produk = '" & txtId.Text & "' "
+
+        Dim ms As New System.IO.MemoryStream()
+        PictureBox1.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg)
+        Dim arrImage() As Byte = ms.GetBuffer()
+        ms.Close()
+
+        Dim query = "UPDATE produk SET nama_produk = '" & txtNamaProduk.Text & "', harga_produk = '" & txtHargaProduk.Text & "', kategori_produk = '" & cboKategoriProduk.SelectedItem & "', status_produk = '" & cboStatusProduk.SelectedItem & "', gambar =  @gambar  WHERE id_produk = '" & txtId.Text & "' "
         cmd = New MySqlCommand(query, conn)
+        cmd.Parameters.AddWithValue("gambar", arrImage)
+
         rd = cmd.ExecuteReader()
         MsgBox("berhasil diubah")
         adminForm.Show()
@@ -25,12 +33,16 @@ Public Class updateProduct
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim openFileDialog As New OpenFileDialog()
-        openFileDialog.Filter = "Gambar|*.jpg;.png;.jpeg;"
-        If openFileDialog.ShowDialog() = Windows.Forms.DialogResult.OK Then
-            Dim fileName As String = Path.GetFileName(openFileDialog.FileName)
-            Label1.Text = fileName
-        End If
+        Dim openFile As New OpenFileDialog()
+        Try
+            openFile.Filter = "JPEG(*.jpeg;*.jpg)|*.jpg|PNG(+.png)|*.png"
+            If openFile.ShowDialog() = Windows.Forms.DialogResult.OK Then
+                PictureBox1.Image = Image.FromFile(openFile.FileName)
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
     End Sub
 
     Private Sub updateProduct_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -48,5 +60,9 @@ Public Class updateProduct
         rd.Close()
         adminForm.addItemsFromDb()
         Me.Close()
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
     End Sub
 End Class

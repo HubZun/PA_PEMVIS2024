@@ -85,23 +85,23 @@
     <Compile Include="adminForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="akunStaff.Designer.vb">
-      <DependentUpon>akunStaff.vb</DependentUpon>
+    <Compile Include="cartItems.Designer.vb">
+      <DependentUpon>cartItems.vb</DependentUpon>
     </Compile>
-    <Compile Include="akunStaff.vb">
+    <Compile Include="cartItems.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="loadItems.Designer.vb">
+      <DependentUpon>loadItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="loadItems.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="loginForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.vb">
-      <DependentUpon>Form2.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Form2.vb">
+    <Compile Include="loginForm.Designer.vb">
+      <DependentUpon>loginForm.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Module1.vb" />
@@ -140,14 +140,14 @@
     <EmbeddedResource Include="adminForm.resx">
       <DependentUpon>adminForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="akunStaff.resx">
-      <DependentUpon>akunStaff.vb</DependentUpon>
+    <EmbeddedResource Include="cartItems.resx">
+      <DependentUpon>cartItems.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="loadItems.resx">
+      <DependentUpon>loadItems.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <EmbeddedResource Include="loginForm.resx">
+      <DependentUpon>loginForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -174,6 +174,18 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\White Minimal Furniture Website Desktop Prototype %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\White Minimal Furniture Website Desktop Prototype.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cappucino.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

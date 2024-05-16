@@ -12,25 +12,47 @@ Public Class addProduct
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         koneksi()
-        Dim query = "insert into produk values ('','" & txtNamaProduk.Text & "', '" & txtHargaProduk.Text & "' , '" & cboKategoriProduk.SelectedItem & "' , '" & cboStatusProduk.SelectedItem & "', '" & Label1.Text & "')"
-        cmd = New MySqlCommand(query, conn)
-        rd = cmd.ExecuteReader()
-        MsgBox("berhasil ditambah")
-        clear()
-        rd.Close()
+        Try
+            Dim ms As New System.IO.MemoryStream()
+            PictureBox1.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg)
+            Dim arrImage() As Byte = ms.GetBuffer()
+            ms.Close()
 
-        adminForm.addItemsFromDb()
+            cmd = New MySqlCommand("insert into produk (nama_produk,harga_produk,kategori_produk,status_produk,gambar) values (@nama_produk,@harga_produk,@kategori_produk,@status_produk,@gambar)", conn)
+            cmd.Parameters.AddWithValue("nama_produk", txtNamaProduk.Text)
+            cmd.Parameters.AddWithValue("harga_produk", txtHargaProduk.Text)
+            cmd.Parameters.AddWithValue("kategori_produk", cboKategoriProduk.Text)
+            cmd.Parameters.AddWithValue("status_produk", cboStatusProduk.Text)
+            cmd.Parameters.AddWithValue("gambar", arrImage)
+            cmd.ExecuteNonQuery()
 
+            MsgBox("berhasil simpan gambar")
+            PictureBox1.Image = Nothing
+            txtHargaProduk.Text = ""
+            txtNamaProduk.Text = ""
+            cboKategoriProduk.TabIndex = 0
+            cboStatusProduk.TabIndex = 0
+            Me.Close()
+            
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+
+
+        End Try
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim openFileDialog As New OpenFileDialog()
+        Dim openFile As New OpenFileDialog()
 
-        openFileDialog.Filter = "Gambar|*.jpg;.png;.jpeg;"
+        Try
+            openFile.Filter = "JPEG(*.jpeg;*.jpg)|*.jpg|PNG(+.png)|*.png"
+            If openFile.ShowDialog() = Windows.Forms.DialogResult.OK Then
+                PictureBox1.Image = Image.FromFile(openFile.FileName)
+            End If
 
-        If openFileDialog.ShowDialog() = Windows.Forms.DialogResult.OK Then
-            Dim fileName As String = Path.GetFileName(openFileDialog.FileName)
-            Label1.Text = fileName
-        End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
     End Sub
 End Class

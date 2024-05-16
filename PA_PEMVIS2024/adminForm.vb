@@ -93,7 +93,11 @@ Public Class adminForm
             updateProduct.txtHargaProduk.Text = row.Cells(2).Value
             updateProduct.cboKategoriProduk.Text = row.Cells(3).Value
             updateProduct.cboStatusProduk.Text = row.Cells(4).Value
-            updateProduct.Label1.Text = row.Cells(5).Value
+
+            Dim data As Byte() = DirectCast(row.Cells(5).Value, Byte())
+            Dim ms As New MemoryStream(data)
+            updateProduct.PictureBox1.Image = Image.FromStream(ms)
+
             updateProduct.Show()
 
         End If

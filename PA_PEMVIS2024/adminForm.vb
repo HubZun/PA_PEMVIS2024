@@ -61,9 +61,10 @@ Public Class adminForm
         cmd = New MySqlCommand(q, conn)
         rd = cmd.ExecuteReader
         While rd.Read()
-            dgvStaff.Rows.Add(rd.Item(0), rd.Item(1))
+            dgvStaff.Rows.Add(rd.Item(0), rd.Item(1), rd.Item(3))
         End While
 
+        rd.Close()
 
 
     End Sub
@@ -76,8 +77,19 @@ Public Class adminForm
         pnlOnBtnPrf.Height = 0
         pnlOnBtnLgt.Height = 0
 
+        name_user()
+
     End Sub
 
+    Private Sub name_user()
+        cmd = New MySqlCommand("select * from user where id_user = " & loginForm.id & "", conn)
+        rd = cmd.ExecuteReader
+        While rd.Read
+            lblUsername.Text = rd("username")
+        End While
+        rd.Close()
+
+    End Sub
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
         addProduct.Show()
@@ -104,9 +116,112 @@ Public Class adminForm
 
     End Sub
 
-    
+
     Private Sub btnTambahAkun_Click(sender As Object, e As EventArgs) Handles btnTambahAkun.Click
+
         akunStaff.Show()
+
+    End Sub
+
+    Private Sub txtSearch_Click(sender As Object, e As EventArgs) Handles txtSearch.Click
+        txtSearch.Text = ""
+    End Sub
+
+
+
+
+    Private Sub txtSearch_TextChanged(sender As Object, e As EventArgs) Handles txtSearch.TextChanged
+        If txtSearch.Text <> Nothing Then
+            koneksi()
+
+            Dim q = "select * from produk where nama_produk like '%" & txtSearch.Text & "%'"
+            cmd = New MySqlCommand(q, conn)
+            rd = cmd.ExecuteReader
+
+
+            If rd.HasRows Then
+                dgvProduk.Rows.Clear()
+                While rd.Read
+                    Dim row As New DataGridViewRow()
+                    row.CreateCells(dgvProduk)
+                    row.Cells(0).Value = rd("id_produk")
+                    row.Cells(1).Value = rd("nama_produk")
+                    row.Cells(2).Value = rd("harga_produk")
+                    row.Cells(3).Value = rd("kategori_produk")
+                    row.Cells(4).Value = rd("status_produk")
+                    row.Cells(5).Value = rd("gambar")
+
+                    dgvProduk.Rows.Add(row)
+
+
+
+                End While
+            Else
+                dgvProduk.Rows.Clear()
+
+            End If
+            rd.Close()
+        Else
+            addItemsFromDb()
+
+
+
+        End If
+    End Sub
+
+    Private Sub txtSearch2_Click(sender As Object, e As EventArgs) Handles txtSearch2.Click
+        txtSearch2.Text = ""
+
+    End Sub
+
+   
+
+   
+    Private Sub txtSearch2_TextChanged(sender As Object, e As EventArgs) Handles txtSearch2.TextChanged
+        If txtSearch2.Text <> Nothing Then
+            koneksi()
+
+            Dim q = "select * from user where username like '%" & txtSearch2.Text & "%'"
+            cmd = New MySqlCommand(q, conn)
+            rd = cmd.ExecuteReader
+
+
+            If rd.HasRows Then
+                dgvStaff.Rows.Clear()
+                While rd.Read
+                    Dim row As New DataGridViewRow()
+                    row.CreateCells(dgvStaff)
+                    row.Cells(0).Value = rd("id_user")
+                    row.Cells(1).Value = rd("username")
+                    row.Cells(2).Value = rd("role")
+                    
+
+                    dgvStaff.Rows.Add(row)
+
+
+
+                End While
+            Else
+                dgvStaff.Rows.Clear()
+
+            End If
+            rd.Close()
+        Else
+            addItemsStaffFromDb()
+        End If
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        adminProfile.Show()
+
+    End Sub
+
+    Private Sub btnLgt_Click(sender As Object, e As EventArgs) Handles btnLgt.Click
+        Me.Close()
+        loginForm.Show()
+        loginForm.txtUsername.Clear()
+        loginForm.txtPassword.Clear()
 
     End Sub
 End Class

@@ -27,6 +27,10 @@ PA_PEMVIS2024
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:PA_PEMVIS2024.My.Resources.Resources.user_circle_svgrepo_com">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:PA_PEMVIS2024.My.Resources.Resources.White_Minimal_Furniture_Website_Desktop_Prototype">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

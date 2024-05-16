@@ -27,31 +27,31 @@ Partial Class akunStaff
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtKonfirmasiPassword = New System.Windows.Forms.TextBox()
-        Me.btnDaftar = New System.Windows.Forms.Button()
+        Me.txtKonfirmasi = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(41, 41)
+        Me.Label1.Location = New System.Drawing.Point(41, 46)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(53, 13)
+        Me.Label1.Size = New System.Drawing.Size(55, 13)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "username"
+        Me.Label1.Text = "Username"
         '
         'txtUsername
         '
-        Me.txtUsername.Location = New System.Drawing.Point(44, 57)
+        Me.txtUsername.Location = New System.Drawing.Point(44, 62)
         Me.txtUsername.Name = "txtUsername"
-        Me.txtUsername.Size = New System.Drawing.Size(203, 20)
+        Me.txtUsername.Size = New System.Drawing.Size(182, 20)
         Me.txtUsername.TabIndex = 1
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(41, 89)
+        Me.Label2.Location = New System.Drawing.Point(41, 93)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(52, 13)
         Me.Label2.TabIndex = 0
@@ -59,60 +59,60 @@ Partial Class akunStaff
         '
         'txtPassword
         '
-        Me.txtPassword.Location = New System.Drawing.Point(44, 105)
+        Me.txtPassword.Location = New System.Drawing.Point(44, 109)
         Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.Size = New System.Drawing.Size(203, 20)
-        Me.txtPassword.TabIndex = 1
+        Me.txtPassword.Size = New System.Drawing.Size(182, 20)
+        Me.txtPassword.TabIndex = 2
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(41, 141)
+        Me.Label3.Location = New System.Drawing.Point(41, 142)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(102, 13)
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "konfirmasi password"
         '
-        'txtKonfirmasiPassword
+        'txtKonfirmasi
         '
-        Me.txtKonfirmasiPassword.Location = New System.Drawing.Point(44, 157)
-        Me.txtKonfirmasiPassword.Name = "txtKonfirmasiPassword"
-        Me.txtKonfirmasiPassword.Size = New System.Drawing.Size(203, 20)
-        Me.txtKonfirmasiPassword.TabIndex = 1
+        Me.txtKonfirmasi.Location = New System.Drawing.Point(44, 158)
+        Me.txtKonfirmasi.Name = "txtKonfirmasi"
+        Me.txtKonfirmasi.Size = New System.Drawing.Size(182, 20)
+        Me.txtKonfirmasi.TabIndex = 3
         '
-        'btnDaftar
+        'Button1
         '
-        Me.btnDaftar.Location = New System.Drawing.Point(172, 192)
-        Me.btnDaftar.Name = "btnDaftar"
-        Me.btnDaftar.Size = New System.Drawing.Size(75, 23)
-        Me.btnDaftar.TabIndex = 2
-        Me.btnDaftar.Text = "Daftar"
-        Me.btnDaftar.UseVisualStyleBackColor = True
+        Me.Button1.Location = New System.Drawing.Point(169, 201)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 4
+        Me.Button1.Text = "daftar"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(44, 192)
+        Me.Button2.Location = New System.Drawing.Point(44, 201)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Cancel"
+        Me.Button2.TabIndex = 5
+        Me.Button2.Text = "batal"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'akunStaff
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(305, 250)
+        Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.btnDaftar)
-        Me.Controls.Add(Me.txtKonfirmasiPassword)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.txtKonfirmasi)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtUsername)
         Me.Controls.Add(Me.Label1)
         Me.Name = "akunStaff"
-        Me.Text = "akunStaffvb"
+        Me.Text = "akunStaff"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -122,7 +122,7 @@ Partial Class akunStaff
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents txtPassword As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents txtKonfirmasiPassword As System.Windows.Forms.TextBox
-    Friend WithEvents btnDaftar As System.Windows.Forms.Button
+    Friend WithEvents txtKonfirmasi As System.Windows.Forms.TextBox
+    Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
 End Class

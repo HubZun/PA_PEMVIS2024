@@ -42,17 +42,18 @@ Partial Class adminForm
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.gambar = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.pnlStaff = New System.Windows.Forms.Panel()
         Me.dgvStaff = New System.Windows.Forms.DataGridView()
+        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btnTambahAkun = New System.Windows.Forms.Button()
         Me.pnlProfile = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.pnlAside.SuspendLayout()
         Me.pnlProduk.SuspendLayout()
         CType(Me.dgvProduk, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -63,7 +64,7 @@ Partial Class adminForm
         '
         'pnlAside
         '
-        Me.pnlAside.BackColor = System.Drawing.Color.Red
+        Me.pnlAside.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(72, Byte), Integer))
         Me.pnlAside.Controls.Add(Me.pnlOnBtnLgt)
         Me.pnlAside.Controls.Add(Me.pnlOnBtnPrf)
         Me.pnlAside.Controls.Add(Me.btnLgt)
@@ -81,7 +82,7 @@ Partial Class adminForm
         '
         'pnlOnBtnLgt
         '
-        Me.pnlOnBtnLgt.BackColor = System.Drawing.Color.Gold
+        Me.pnlOnBtnLgt.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(69, Byte), Integer))
         Me.pnlOnBtnLgt.Location = New System.Drawing.Point(0, 198)
         Me.pnlOnBtnLgt.Name = "pnlOnBtnLgt"
         Me.pnlOnBtnLgt.Size = New System.Drawing.Size(12, 37)
@@ -89,7 +90,7 @@ Partial Class adminForm
         '
         'pnlOnBtnPrf
         '
-        Me.pnlOnBtnPrf.BackColor = System.Drawing.Color.Gold
+        Me.pnlOnBtnPrf.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(69, Byte), Integer))
         Me.pnlOnBtnPrf.Location = New System.Drawing.Point(0, 155)
         Me.pnlOnBtnPrf.Name = "pnlOnBtnPrf"
         Me.pnlOnBtnPrf.Size = New System.Drawing.Size(12, 37)
@@ -123,7 +124,7 @@ Partial Class adminForm
         '
         'pnlOnBtnStf
         '
-        Me.pnlOnBtnStf.BackColor = System.Drawing.Color.Gold
+        Me.pnlOnBtnStf.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(69, Byte), Integer))
         Me.pnlOnBtnStf.Location = New System.Drawing.Point(0, 112)
         Me.pnlOnBtnStf.Name = "pnlOnBtnStf"
         Me.pnlOnBtnStf.Size = New System.Drawing.Size(12, 37)
@@ -144,7 +145,7 @@ Partial Class adminForm
         '
         'pnlOnBtnPrd
         '
-        Me.pnlOnBtnPrd.BackColor = System.Drawing.Color.Gold
+        Me.pnlOnBtnPrd.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(69, Byte), Integer))
         Me.pnlOnBtnPrd.Location = New System.Drawing.Point(0, 69)
         Me.pnlOnBtnPrd.Name = "pnlOnBtnPrd"
         Me.pnlOnBtnPrd.Size = New System.Drawing.Size(12, 37)
@@ -176,7 +177,7 @@ Partial Class adminForm
         '
         'pnlTop
         '
-        Me.pnlTop.BackColor = System.Drawing.Color.Yellow
+        Me.pnlTop.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(69, Byte), Integer))
         Me.pnlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlTop.Location = New System.Drawing.Point(141, 0)
         Me.pnlTop.Name = "pnlTop"
@@ -186,7 +187,7 @@ Partial Class adminForm
         'pnlProduk
         '
         Me.pnlProduk.Controls.Add(Me.dgvProduk)
-        Me.pnlProduk.Controls.Add(Me.TextBox1)
+        Me.pnlProduk.Controls.Add(Me.txtSearch)
         Me.pnlProduk.Controls.Add(Me.Button1)
         Me.pnlProduk.Controls.Add(Me.Label2)
         Me.pnlProduk.Dock = System.Windows.Forms.DockStyle.Fill
@@ -214,6 +215,7 @@ Partial Class adminForm
         Me.dgvProduk.Name = "dgvProduk"
         Me.dgvProduk.ReadOnly = True
         Me.dgvProduk.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
+        Me.dgvProduk.RowHeadersVisible = False
         Me.dgvProduk.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.Lime
         Me.dgvProduk.RowsDefaultCellStyle = DataGridViewCellStyle2
@@ -258,17 +260,17 @@ Partial Class adminForm
         Me.gambar.Name = "gambar"
         Me.gambar.ReadOnly = True
         '
-        'TextBox1
+        'txtSearch
         '
-        Me.TextBox1.Location = New System.Drawing.Point(446, 44)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 2
-        Me.TextBox1.Text = "search.."
+        Me.txtSearch.Location = New System.Drawing.Point(446, 44)
+        Me.txtSearch.Name = "txtSearch"
+        Me.txtSearch.Size = New System.Drawing.Size(100, 20)
+        Me.txtSearch.TabIndex = 2
+        Me.txtSearch.Text = "Search..."
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(42, 42)
+        Me.Button1.Location = New System.Drawing.Point(18, 42)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 1
@@ -313,14 +315,31 @@ Partial Class adminForm
         Me.dgvStaff.AllowUserToDeleteRows = False
         Me.dgvStaff.AllowUserToResizeColumns = False
         Me.dgvStaff.AllowUserToResizeRows = False
+        Me.dgvStaff.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvStaff.BackgroundColor = System.Drawing.SystemColors.ControlLight
         Me.dgvStaff.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgvStaff.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvStaff.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column6, Me.Column7})
+        Me.dgvStaff.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column6, Me.Column7, Me.Column8})
         Me.dgvStaff.Location = New System.Drawing.Point(18, 83)
         Me.dgvStaff.Name = "dgvStaff"
+        Me.dgvStaff.RowHeadersVisible = False
         Me.dgvStaff.Size = New System.Drawing.Size(569, 320)
         Me.dgvStaff.TabIndex = 2
+        '
+        'Column6
+        '
+        Me.Column6.HeaderText = "Id"
+        Me.Column6.Name = "Column6"
+        '
+        'Column7
+        '
+        Me.Column7.HeaderText = "Nama"
+        Me.Column7.Name = "Column7"
+        '
+        'Column8
+        '
+        Me.Column8.HeaderText = "role"
+        Me.Column8.Name = "Column8"
         '
         'btnTambahAkun
         '
@@ -350,16 +369,6 @@ Partial Class adminForm
         Me.Label4.Size = New System.Drawing.Size(59, 20)
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "profile"
-        '
-        'Column6
-        '
-        Me.Column6.HeaderText = "Id"
-        Me.Column6.Name = "Column6"
-        '
-        'Column7
-        '
-        Me.Column7.HeaderText = "Nama"
-        Me.Column7.Name = "Column7"
         '
         'adminForm
         '
@@ -405,9 +414,8 @@ Partial Class adminForm
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents pnlProfile As System.Windows.Forms.Panel
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents txtSearch As System.Windows.Forms.TextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents dgvProduk As System.Windows.Forms.DataGridView
     Friend WithEvents Column5 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column2 As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -418,4 +426,6 @@ Partial Class adminForm
     Friend WithEvents btnTambahAkun As System.Windows.Forms.Button
     Friend WithEvents Column6 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column7 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Column8 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents dgvProduk As System.Windows.Forms.DataGridView
 End Class

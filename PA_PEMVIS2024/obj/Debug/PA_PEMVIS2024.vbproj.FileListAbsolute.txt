@@ -1,67 +1,17 @@
-C:\Users\ROG-STRIX\AppData\Local\Temporary Projects\PA_PEMVIS2024\bin\Debug\PA_PEMVIS2024.exe.config
-C:\Users\ROG-STRIX\AppData\Local\Temporary Projects\PA_PEMVIS2024\bin\Debug\PA_PEMVIS2024.exe
-C:\Users\ROG-STRIX\AppData\Local\Temporary Projects\PA_PEMVIS2024\bin\Debug\PA_PEMVIS2024.pdb
-C:\Users\ROG-STRIX\AppData\Local\Temporary Projects\PA_PEMVIS2024\bin\Debug\PA_PEMVIS2024.xml
-C:\Users\ROG-STRIX\AppData\Local\Temporary Projects\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.Form1.resources
-C:\Users\ROG-STRIX\AppData\Local\Temporary Projects\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.Resources.resources
-C:\Users\ROG-STRIX\AppData\Local\Temporary Projects\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.vbproj.GenerateResource.Cache
-C:\Users\ROG-STRIX\AppData\Local\Temporary Projects\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.exe
-C:\Users\ROG-STRIX\AppData\Local\Temporary Projects\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.xml
-C:\Users\ROG-STRIX\AppData\Local\Temporary Projects\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.pdb
-C:\Users\ROG-STRIX\AppData\Local\Temporary Projects\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.Form2.resources
-C:\Users\ROG-STRIX\AppData\Local\Temporary Projects\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.vbprojResolveAssemblyReference.cache
-C:\Users\ROG-STRIX\AppData\Local\Temporary Projects\PA_PEMVIS2024\bin\Debug\mysql.data.dll
-E:\TUGAS BANG FADLAN\CODING\VISUAL BASIC\PA_PEMVIS2024\PA_PEMVIS2024\bin\Debug\PA_PEMVIS2024.exe.config
-E:\TUGAS BANG FADLAN\CODING\VISUAL BASIC\PA_PEMVIS2024\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.exe
-E:\TUGAS BANG FADLAN\CODING\VISUAL BASIC\PA_PEMVIS2024\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.xml
-E:\TUGAS BANG FADLAN\CODING\VISUAL BASIC\PA_PEMVIS2024\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.pdb
-E:\TUGAS BANG FADLAN\CODING\VISUAL BASIC\PA_PEMVIS2024\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.vbprojResolveAssemblyReference.cache
-E:\TUGAS BANG FADLAN\CODING\VISUAL BASIC\PA_PEMVIS2024\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.Resources.resources
-E:\TUGAS BANG FADLAN\CODING\VISUAL BASIC\PA_PEMVIS2024\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.vbproj.GenerateResource.Cache
-E:\TUGAS BANG FADLAN\CODING\VISUAL BASIC\PA_PEMVIS2024\PA_PEMVIS2024\bin\Debug\PA_PEMVIS2024.exe
-E:\TUGAS BANG FADLAN\CODING\VISUAL BASIC\PA_PEMVIS2024\PA_PEMVIS2024\bin\Debug\PA_PEMVIS2024.pdb
-E:\TUGAS BANG FADLAN\CODING\VISUAL BASIC\PA_PEMVIS2024\PA_PEMVIS2024\bin\Debug\PA_PEMVIS2024.xml
-E:\TUGAS BANG FADLAN\CODING\VISUAL BASIC\PA_PEMVIS2024\PA_PEMVIS2024\bin\Debug\mysql.data.dll
-E:\TUGAS BANG FADLAN\CODING\VISUAL BASIC\PA_PEMVIS2024\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.staffForm.resources
-C:\Users\ahmad\OneDrive\Dokumen\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\bin\Debug\PA_PEMVIS2024.exe.config
-C:\Users\ahmad\OneDrive\Dokumen\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.exe
-C:\Users\ahmad\OneDrive\Dokumen\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.xml
-C:\Users\ahmad\OneDrive\Dokumen\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.pdb
-C:\Users\ahmad\OneDrive\Dokumen\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\bin\Debug\PA_PEMVIS2024.exe
-C:\Users\ahmad\OneDrive\Dokumen\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\bin\Debug\PA_PEMVIS2024.pdb
-C:\Users\ahmad\OneDrive\Dokumen\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\bin\Debug\PA_PEMVIS2024.xml
-C:\Users\ahmad\OneDrive\Dokumen\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.vbprojResolveAssemblyReference.cache
-C:\Users\ahmad\OneDrive\Dokumen\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.Form1.resources
-C:\Users\ahmad\OneDrive\Dokumen\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.Form2.resources
-C:\Users\ahmad\OneDrive\Dokumen\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.Resources.resources
-C:\Users\ahmad\OneDrive\Dokumen\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.staffForm.resources
-C:\Users\ahmad\OneDrive\Dokumen\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.vbproj.GenerateResource.Cache
-C:\Users\ahmad\OneDrive\Dokumen\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.adminForm.resources
-C:\Users\ahmad\OneDrive\Dokumen\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.addProduct.resources
-C:\Users\ACER\Documents\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\bin\Debug\PA_PEMVIS2024.exe.config
-C:\Users\ACER\Documents\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.exe
-C:\Users\ACER\Documents\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.xml
-C:\Users\ACER\Documents\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.pdb
-C:\Users\ACER\Documents\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\bin\Debug\PA_PEMVIS2024.exe
-C:\Users\ACER\Documents\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\bin\Debug\PA_PEMVIS2024.pdb
-C:\Users\ACER\Documents\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\bin\Debug\PA_PEMVIS2024.xml
-C:\Users\ACER\Documents\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.vbprojResolveAssemblyReference.cache
-C:\Users\ACER\Documents\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.addProduct.resources
-C:\Users\ACER\Documents\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.adminForm.resources
-C:\Users\ACER\Documents\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.Form1.resources
-C:\Users\ACER\Documents\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.Form2.resources
-C:\Users\ACER\Documents\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.Resources.resources
-C:\Users\ACER\Documents\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.staffForm.resources
-C:\Users\ACER\Documents\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.vbproj.GenerateResource.Cache
-C:\Users\ACER\Documents\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.updateProduct.resources
-<<<<<<< HEAD
-E:\TUGAS BANG FADLAN\CODING\VISUAL BASIC\PA_PEMVIS2024\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.addProduct.resources
-E:\TUGAS BANG FADLAN\CODING\VISUAL BASIC\PA_PEMVIS2024\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.adminForm.resources
-E:\TUGAS BANG FADLAN\CODING\VISUAL BASIC\PA_PEMVIS2024\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.updateProduct.resources
-E:\TUGAS BANG FADLAN\CODING\VISUAL BASIC\PA_PEMVIS2024\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.loginForm.resources
-E:\TUGAS BANG FADLAN\CODING\VISUAL BASIC\PA_PEMVIS2024\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.loadItems.resources
-E:\TUGAS BANG FADLAN\CODING\VISUAL BASIC\PA_PEMVIS2024\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.cartItems.resources
-=======
-C:\Users\ahmad\OneDrive\Dokumen\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.updateProduct.resources
-C:\Users\ahmad\OneDrive\Dokumen\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.akunStaff.resources
->>>>>>> main
+D:\ahmad\PRAKTIKUM INFORMATIKA UNMUL\PA-PEMVIS\PA_PEMVIS2024\bin\Debug\PA_PEMVIS2024.exe.config
+D:\ahmad\PRAKTIKUM INFORMATIKA UNMUL\PA-PEMVIS\PA_PEMVIS2024\bin\Debug\PA_PEMVIS2024.exe
+D:\ahmad\PRAKTIKUM INFORMATIKA UNMUL\PA-PEMVIS\PA_PEMVIS2024\bin\Debug\PA_PEMVIS2024.pdb
+D:\ahmad\PRAKTIKUM INFORMATIKA UNMUL\PA-PEMVIS\PA_PEMVIS2024\bin\Debug\PA_PEMVIS2024.xml
+D:\ahmad\PRAKTIKUM INFORMATIKA UNMUL\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.addProduct.resources
+D:\ahmad\PRAKTIKUM INFORMATIKA UNMUL\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.adminForm.resources
+D:\ahmad\PRAKTIKUM INFORMATIKA UNMUL\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.akunStaff.resources
+D:\ahmad\PRAKTIKUM INFORMATIKA UNMUL\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.cartItems.resources
+D:\ahmad\PRAKTIKUM INFORMATIKA UNMUL\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.loadItems.resources
+D:\ahmad\PRAKTIKUM INFORMATIKA UNMUL\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.loginForm.resources
+D:\ahmad\PRAKTIKUM INFORMATIKA UNMUL\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.Resources.resources
+D:\ahmad\PRAKTIKUM INFORMATIKA UNMUL\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.staffForm.resources
+D:\ahmad\PRAKTIKUM INFORMATIKA UNMUL\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.updateProduct.resources
+D:\ahmad\PRAKTIKUM INFORMATIKA UNMUL\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.vbproj.GenerateResource.Cache
+D:\ahmad\PRAKTIKUM INFORMATIKA UNMUL\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.exe
+D:\ahmad\PRAKTIKUM INFORMATIKA UNMUL\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.xml
+D:\ahmad\PRAKTIKUM INFORMATIKA UNMUL\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.pdb

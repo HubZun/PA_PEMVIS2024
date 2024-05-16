@@ -43,37 +43,37 @@ Partial Class updateProduct
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(28, 302)
+        Me.Label1.Location = New System.Drawing.Point(21, 245)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(51, 17)
+        Me.Label1.Size = New System.Drawing.Size(39, 13)
         Me.Label1.TabIndex = 17
         Me.Label1.Text = "Label1"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(427, 302)
+        Me.Button1.Location = New System.Drawing.Point(320, 245)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(56, 19)
         Me.Button1.TabIndex = 16
         Me.Button1.Text = "Browse"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'btnAdd
         '
-        Me.btnAdd.Location = New System.Drawing.Point(124, 340)
-        Me.btnAdd.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnAdd.Location = New System.Drawing.Point(93, 276)
         Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(89, 28)
+        Me.btnAdd.Size = New System.Drawing.Size(67, 23)
         Me.btnAdd.TabIndex = 14
         Me.btnAdd.Text = "Update"
         Me.btnAdd.UseVisualStyleBackColor = True
         '
         'btnCancel
         '
-        Me.btnCancel.Location = New System.Drawing.Point(25, 340)
-        Me.btnCancel.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnCancel.Location = New System.Drawing.Point(19, 276)
         Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(91, 28)
+        Me.btnCancel.Size = New System.Drawing.Size(68, 23)
         Me.btnCancel.TabIndex = 15
         Me.btnCancel.Text = "Cancel"
         Me.btnCancel.UseVisualStyleBackColor = True
@@ -82,90 +82,85 @@ Partial Class updateProduct
         '
         Me.cboStatusProduk.FormattingEnabled = True
         Me.cboStatusProduk.Items.AddRange(New Object() {"Ready", "Not Ready"})
-        Me.cboStatusProduk.Location = New System.Drawing.Point(26, 248)
-        Me.cboStatusProduk.Margin = New System.Windows.Forms.Padding(4)
+        Me.cboStatusProduk.Location = New System.Drawing.Point(20, 202)
         Me.cboStatusProduk.Name = "cboStatusProduk"
-        Me.cboStatusProduk.Size = New System.Drawing.Size(295, 24)
+        Me.cboStatusProduk.Size = New System.Drawing.Size(222, 21)
         Me.cboStatusProduk.TabIndex = 12
         '
         'cboKategoriProduk
         '
         Me.cboKategoriProduk.FormattingEnabled = True
         Me.cboKategoriProduk.Items.AddRange(New Object() {"Makanan", "Minuman"})
-        Me.cboKategoriProduk.Location = New System.Drawing.Point(28, 194)
-        Me.cboKategoriProduk.Margin = New System.Windows.Forms.Padding(4)
+        Me.cboKategoriProduk.Location = New System.Drawing.Point(21, 158)
         Me.cboKategoriProduk.Name = "cboKategoriProduk"
-        Me.cboKategoriProduk.Size = New System.Drawing.Size(295, 24)
+        Me.cboKategoriProduk.Size = New System.Drawing.Size(222, 21)
         Me.cboKategoriProduk.TabIndex = 13
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(22, 54)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Location = New System.Drawing.Point(16, 44)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(45, 17)
+        Me.Label5.Size = New System.Drawing.Size(35, 13)
         Me.Label5.TabIndex = 6
         Me.Label5.Text = "Nama"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(24, 227)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Location = New System.Drawing.Point(18, 184)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(48, 17)
+        Me.Label8.Size = New System.Drawing.Size(37, 13)
         Me.Label8.TabIndex = 7
         Me.Label8.Text = "Status"
         '
         'txtNamaProduk
         '
-        Me.txtNamaProduk.Location = New System.Drawing.Point(26, 75)
-        Me.txtNamaProduk.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtNamaProduk.Location = New System.Drawing.Point(20, 61)
         Me.txtNamaProduk.Name = "txtNamaProduk"
-        Me.txtNamaProduk.Size = New System.Drawing.Size(296, 22)
+        Me.txtNamaProduk.Size = New System.Drawing.Size(223, 20)
         Me.txtNamaProduk.TabIndex = 10
         '
         'txtHargaProduk
         '
-        Me.txtHargaProduk.Location = New System.Drawing.Point(26, 130)
-        Me.txtHargaProduk.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtHargaProduk.Location = New System.Drawing.Point(20, 106)
         Me.txtHargaProduk.Name = "txtHargaProduk"
-        Me.txtHargaProduk.Size = New System.Drawing.Size(296, 22)
+        Me.txtHargaProduk.Size = New System.Drawing.Size(223, 20)
         Me.txtHargaProduk.TabIndex = 11
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(22, 109)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Location = New System.Drawing.Point(16, 89)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(45, 17)
+        Me.Label6.Size = New System.Drawing.Size(34, 13)
         Me.Label6.TabIndex = 8
         Me.Label6.Text = "harga"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(24, 174)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Location = New System.Drawing.Point(18, 141)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(61, 17)
+        Me.Label7.Size = New System.Drawing.Size(46, 13)
         Me.Label7.TabIndex = 9
         Me.Label7.Text = "Kategori"
         '
         'txtId
         '
-        Me.txtId.Location = New System.Drawing.Point(90, 25)
+        Me.txtId.Location = New System.Drawing.Point(68, 20)
+        Me.txtId.Margin = New System.Windows.Forms.Padding(2)
         Me.txtId.Name = "txtId"
-        Me.txtId.Size = New System.Drawing.Size(100, 22)
+        Me.txtId.Size = New System.Drawing.Size(76, 20)
         Me.txtId.TabIndex = 18
+        Me.txtId.Visible = False
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(229, 340)
+        Me.Button2.Location = New System.Drawing.Point(172, 276)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(92, 28)
+        Me.Button2.Size = New System.Drawing.Size(69, 23)
         Me.Button2.TabIndex = 19
         Me.Button2.Text = "Hapus"
         Me.Button2.UseVisualStyleBackColor = True
@@ -173,18 +168,19 @@ Partial Class updateProduct
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.PictureBox1.Location = New System.Drawing.Point(364, 25)
+        Me.PictureBox1.Location = New System.Drawing.Point(273, 20)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(192, 243)
+        Me.PictureBox1.Size = New System.Drawing.Size(144, 197)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 20
         Me.PictureBox1.TabStop = False
         '
         'updateProduct
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(597, 428)
+        Me.ClientSize = New System.Drawing.Size(448, 348)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.txtId)
@@ -200,6 +196,7 @@ Partial Class updateProduct
         Me.Controls.Add(Me.txtHargaProduk)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label7)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "updateProduct"
         Me.Text = "updateProduct"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

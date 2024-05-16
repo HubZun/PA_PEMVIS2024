@@ -61,9 +61,10 @@ Public Class adminForm
         cmd = New MySqlCommand(q, conn)
         rd = cmd.ExecuteReader
         While rd.Read()
-            dgvStaff.Rows.Add(rd.Item(0), rd.Item(1))
+            dgvStaff.Rows.Add(rd.Item(0), rd.Item(1), rd.Item(3))
         End While
 
+        rd.Close()
 
 
     End Sub
@@ -76,6 +77,7 @@ Public Class adminForm
         pnlOnBtnPrf.Height = 0
         pnlOnBtnLgt.Height = 0
 
+       
     End Sub
 
 
@@ -104,9 +106,59 @@ Public Class adminForm
 
     End Sub
 
-    
+
     Private Sub btnTambahAkun_Click(sender As Object, e As EventArgs) Handles btnTambahAkun.Click
+
         akunStaff.Show()
 
     End Sub
+
+    Private Sub txtSearch_Click(sender As Object, e As EventArgs) Handles txtSearch.Click
+        txtSearch.Text = ""
+    End Sub
+
+
+
+
+    Private Sub txtSearch_TextChanged(sender As Object, e As EventArgs) Handles txtSearch.TextChanged
+        If txtSearch.Text <> Nothing Then
+            koneksi()
+
+            Dim q = "select * from produk where nama_produk like '%" & txtSearch.Text & "%'"
+            cmd = New MySqlCommand(q, conn)
+            rd = cmd.ExecuteReader
+
+
+            If rd.HasRows Then
+                dgvProduk.Rows.Clear()
+                While rd.Read
+                    Dim row As New DataGridViewRow()
+                    row.CreateCells(dgvProduk)
+                    row.Cells(0).Value = rd("id_produk")
+                    row.Cells(1).Value = rd("nama_produk")
+                    row.Cells(2).Value = rd("harga_produk")
+                    row.Cells(3).Value = rd("kategori_produk")
+                    row.Cells(4).Value = rd("status_produk")
+                    row.Cells(5).Value = rd("gambar")
+
+                    dgvProduk.Rows.Add(row)
+
+
+
+                End While
+            Else
+                dgvProduk.Rows.Clear()
+
+            End If
+            rd.Close()
+        Else
+            addItemsFromDb()
+
+
+
+        End If
+    End Sub
+
+
+   
 End Class

@@ -51,12 +51,27 @@ Public Class adminForm
         While rd.Read()
             dgvProduk.Rows.Add(rd.Item(0), rd.Item(1), rd.Item(2), rd.Item(3), rd.Item(4), rd.Item(5))
         End While
+        rd.Close()
+
     End Sub
 
+    Public Sub addItemsStaffFromDb()
+        dgvStaff.Rows.Clear()
+        Dim q = "select * from user"
+        cmd = New MySqlCommand(q, conn)
+        rd = cmd.ExecuteReader
+        While rd.Read()
+            dgvStaff.Rows.Add(rd.Item(0), rd.Item(1))
+        End While
+
+
+
+    End Sub
 
     Private Sub admin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         koneksi()
         addItemsFromDb()
+        addItemsStaffFromDb()
         pnlOnBtnStf.Height = 0
         pnlOnBtnPrf.Height = 0
         pnlOnBtnLgt.Height = 0
@@ -89,7 +104,9 @@ Public Class adminForm
 
     End Sub
 
-    Private Sub dgvProduk_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvProduk.CellContentClick
+    
+    Private Sub btnTambahAkun_Click(sender As Object, e As EventArgs) Handles btnTambahAkun.Click
+        akunStaff.Show()
 
     End Sub
 End Class

@@ -6,6 +6,14 @@ Module module1
     Public da As mysqldataadapter
     Public ds As dataset
     Public str As String
+    Public daftar_pesanan As New List(Of keranjang)
+    Public sum As Double
+    Public jumlahUang As Integer
+    Public menuPesanan As String
+    Public Class keranjang
+        Public menu As String
+        Public total As Integer
+    End Class
     Sub koneksi()
         Try
             Dim str As String =
@@ -18,8 +26,21 @@ Module module1
             messagebox.show(ex.message)
         End Try
     End Sub
-
-    Public jumlahUang As Integer
+    Public Sub tambahPesanan(ByVal menuPesanan As String, ByVal jumlahUang As Integer)
+        Dim newPesan As New keranjang()
+        newPesan.menu = menuPesanan
+        newPesan.total = jumlahUang
+        daftar_pesanan.Add(newPesan)
+    End Sub
+    Public Sub hapusPesanan(ByVal menuPesanan As String)
+        For Each keranjang In module1.daftar_pesanan
+            If keranjang.menu = menuPesanan Then
+                module1.daftar_pesanan.Remove(keranjang)
+                MessageBox.Show("Data harga Telah diHapus")
+                Exit For
+            End If
+        Next
+    End Sub
 
 
 End Module

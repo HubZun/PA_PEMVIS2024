@@ -61,7 +61,27 @@ E:\TUGAS BANG FADLAN\CODING\VISUAL BASIC\PA_PEMVIS2024\PA_PEMVIS2024\obj\Debug\P
 E:\TUGAS BANG FADLAN\CODING\VISUAL BASIC\PA_PEMVIS2024\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.loginForm.resources
 E:\TUGAS BANG FADLAN\CODING\VISUAL BASIC\PA_PEMVIS2024\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.loadItems.resources
 E:\TUGAS BANG FADLAN\CODING\VISUAL BASIC\PA_PEMVIS2024\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.cartItems.resources
+<<<<<<< HEAD
+C:\Users\asus\OneDrive\Dokumen\Visual Studio 2012\Projects\pa_pem\PA_PEMVIS2024\bin\Debug\PA_PEMVIS2024.exe.config
+C:\Users\asus\OneDrive\Dokumen\Visual Studio 2012\Projects\pa_pem\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.exe
+C:\Users\asus\OneDrive\Dokumen\Visual Studio 2012\Projects\pa_pem\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.xml
+C:\Users\asus\OneDrive\Dokumen\Visual Studio 2012\Projects\pa_pem\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.pdb
+C:\Users\asus\OneDrive\Dokumen\Visual Studio 2012\Projects\pa_pem\PA_PEMVIS2024\bin\Debug\PA_PEMVIS2024.exe
+C:\Users\asus\OneDrive\Dokumen\Visual Studio 2012\Projects\pa_pem\PA_PEMVIS2024\bin\Debug\PA_PEMVIS2024.pdb
+C:\Users\asus\OneDrive\Dokumen\Visual Studio 2012\Projects\pa_pem\PA_PEMVIS2024\bin\Debug\PA_PEMVIS2024.xml
+C:\Users\asus\OneDrive\Dokumen\Visual Studio 2012\Projects\pa_pem\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.vbprojResolveAssemblyReference.cache
+C:\Users\asus\OneDrive\Dokumen\Visual Studio 2012\Projects\pa_pem\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.addProduct.resources
+C:\Users\asus\OneDrive\Dokumen\Visual Studio 2012\Projects\pa_pem\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.adminForm.resources
+C:\Users\asus\OneDrive\Dokumen\Visual Studio 2012\Projects\pa_pem\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.cartItems.resources
+C:\Users\asus\OneDrive\Dokumen\Visual Studio 2012\Projects\pa_pem\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.loadItems.resources
+C:\Users\asus\OneDrive\Dokumen\Visual Studio 2012\Projects\pa_pem\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.loginForm.resources
+C:\Users\asus\OneDrive\Dokumen\Visual Studio 2012\Projects\pa_pem\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.Resources.resources
+C:\Users\asus\OneDrive\Dokumen\Visual Studio 2012\Projects\pa_pem\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.staffForm.resources
+C:\Users\asus\OneDrive\Dokumen\Visual Studio 2012\Projects\pa_pem\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.updateProduct.resources
+C:\Users\asus\OneDrive\Dokumen\Visual Studio 2012\Projects\pa_pem\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.vbproj.GenerateResource.Cache
+=======
 =======
 C:\Users\ahmad\OneDrive\Dokumen\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.updateProduct.resources
 C:\Users\ahmad\OneDrive\Dokumen\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.akunStaff.resources
 >>>>>>> main
+>>>>>>> b1fea5e9fd35604c0705d0420a8765aceaa821e7

@@ -39,14 +39,14 @@ Partial Class loadItems
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Location = New System.Drawing.Point(12, 12)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(273, 297)
+        Me.Panel1.Size = New System.Drawing.Size(225, 296)
         Me.Panel1.TabIndex = 5
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(30, 263)
+        Me.Label2.Location = New System.Drawing.Point(9, 254)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(36, 20)
         Me.Label2.TabIndex = 3
@@ -56,7 +56,7 @@ Partial Class loadItems
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(28, 232)
+        Me.Label1.Location = New System.Drawing.Point(8, 215)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(116, 25)
         Me.Label1.TabIndex = 2
@@ -66,9 +66,9 @@ Partial Class loadItems
         '
         Me.PictureBox1.BackgroundImage = Global.PA_PEMVIS2024.My.Resources.Resources.cappucino
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(25, 21)
+        Me.PictureBox1.Location = New System.Drawing.Point(13, 14)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(225, 208)
+        Me.PictureBox1.Size = New System.Drawing.Size(200, 189)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
@@ -78,7 +78,7 @@ Partial Class loadItems
         Me.Button1.BackgroundImage = Global.PA_PEMVIS2024.My.Resources.Resources.plus__1_
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button1.Location = New System.Drawing.Point(205, 248)
+        Me.Button1.Location = New System.Drawing.Point(179, 248)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(34, 35)
         Me.Button1.TabIndex = 0

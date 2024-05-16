@@ -85,6 +85,12 @@
     <Compile Include="adminForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="adminProfile.Designer.vb">
+      <DependentUpon>adminProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="adminProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="akunStaff.Designer.vb">
       <DependentUpon>akunStaff.vb</DependentUpon>
     </Compile>
@@ -146,6 +152,9 @@
     <EmbeddedResource Include="adminForm.resx">
       <DependentUpon>adminForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="adminProfile.resx">
+      <DependentUpon>adminProfile.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="akunStaff.resx">
       <DependentUpon>akunStaff.vb</DependentUpon>
     </EmbeddedResource>
@@ -198,6 +207,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-circle-svgrepo-com.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

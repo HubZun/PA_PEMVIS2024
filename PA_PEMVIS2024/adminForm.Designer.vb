@@ -22,7 +22,7 @@ Partial Class adminForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.pnlAside = New System.Windows.Forms.Panel()
         Me.pnlOnBtnLgt = New System.Windows.Forms.Panel()
         Me.pnlOnBtnPrf = New System.Windows.Forms.Panel()
@@ -47,19 +47,27 @@ Partial Class adminForm
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.pnlStaff = New System.Windows.Forms.Panel()
+        Me.txtSearch2 = New System.Windows.Forms.TextBox()
         Me.dgvStaff = New System.Windows.Forms.DataGridView()
         Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btnTambahAkun = New System.Windows.Forms.Button()
         Me.pnlProfile = New System.Windows.Forms.Panel()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.lblUsername = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.pnlAside.SuspendLayout()
         Me.pnlProduk.SuspendLayout()
         CType(Me.dgvProduk, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlStaff.SuspendLayout()
         CType(Me.dgvStaff, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlProfile.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'pnlAside
@@ -217,8 +225,8 @@ Partial Class adminForm
         Me.dgvProduk.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
         Me.dgvProduk.RowHeadersVisible = False
         Me.dgvProduk.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.Lime
-        Me.dgvProduk.RowsDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle10.BackColor = System.Drawing.Color.Lime
+        Me.dgvProduk.RowsDefaultCellStyle = DataGridViewCellStyle10
         Me.dgvProduk.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.dgvProduk.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvProduk.Size = New System.Drawing.Size(583, 312)
@@ -299,6 +307,7 @@ Partial Class adminForm
         '
         'pnlStaff
         '
+        Me.pnlStaff.Controls.Add(Me.txtSearch2)
         Me.pnlStaff.Controls.Add(Me.dgvStaff)
         Me.pnlStaff.Controls.Add(Me.btnTambahAkun)
         Me.pnlStaff.Controls.Add(Me.Label3)
@@ -309,10 +318,17 @@ Partial Class adminForm
         Me.pnlStaff.TabIndex = 3
         Me.pnlStaff.Visible = False
         '
+        'txtSearch2
+        '
+        Me.txtSearch2.Location = New System.Drawing.Point(472, 50)
+        Me.txtSearch2.Name = "txtSearch2"
+        Me.txtSearch2.Size = New System.Drawing.Size(100, 20)
+        Me.txtSearch2.TabIndex = 3
+        Me.txtSearch2.Text = "Search....."
+        '
         'dgvStaff
         '
         Me.dgvStaff.AllowUserToAddRows = False
-        Me.dgvStaff.AllowUserToDeleteRows = False
         Me.dgvStaff.AllowUserToResizeColumns = False
         Me.dgvStaff.AllowUserToResizeRows = False
         Me.dgvStaff.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
@@ -352,6 +368,9 @@ Partial Class adminForm
         '
         'pnlProfile
         '
+        Me.pnlProfile.Controls.Add(Me.Panel2)
+        Me.pnlProfile.Controls.Add(Me.lblUsername)
+        Me.pnlProfile.Controls.Add(Me.Panel1)
         Me.pnlProfile.Controls.Add(Me.Label4)
         Me.pnlProfile.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnlProfile.Location = New System.Drawing.Point(141, 29)
@@ -360,15 +379,73 @@ Partial Class adminForm
         Me.pnlProfile.TabIndex = 4
         Me.pnlProfile.Visible = False
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(261, 31)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(117, 23)
+        Me.Button2.TabIndex = 4
+        Me.Button2.Text = "Change Password"
+        Me.Button2.UseCompatibleTextRendering = True
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(15, 34)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
+        Me.TextBox1.Size = New System.Drawing.Size(195, 24)
+        Me.TextBox1.TabIndex = 3
+        Me.TextBox1.Text = "***********"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(12, 17)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(53, 13)
+        Me.Label6.TabIndex = 2
+        Me.Label6.Text = "Password"
+        '
+        'lblUsername
+        '
+        Me.lblUsername.AutoSize = True
+        Me.lblUsername.Location = New System.Drawing.Point(286, 230)
+        Me.lblUsername.Name = "lblUsername"
+        Me.lblUsername.Size = New System.Drawing.Size(35, 13)
+        Me.lblUsername.TabIndex = 2
+        Me.lblUsername.Text = "label7"
+        '
+        'Panel1
+        '
+        Me.Panel1.BackgroundImage = Global.PA_PEMVIS2024.My.Resources.Resources.user_circle_svgrepo_com
+        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Panel1.Location = New System.Drawing.Point(225, 63)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(163, 143)
+        Me.Panel1.TabIndex = 1
+        '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Label4.Location = New System.Drawing.Point(274, 40)
+        Me.Label4.Location = New System.Drawing.Point(277, 35)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(59, 20)
+        Me.Label4.Size = New System.Drawing.Size(60, 20)
         Me.Label4.TabIndex = 0
-        Me.Label4.Text = "profile"
+        Me.Label4.Text = "Profile"
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.SystemColors.Control
+        Me.Panel2.Controls.Add(Me.Label6)
+        Me.Panel2.Controls.Add(Me.Button2)
+        Me.Panel2.Controls.Add(Me.TextBox1)
+        Me.Panel2.Location = New System.Drawing.Point(106, 261)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(401, 79)
+        Me.Panel2.TabIndex = 5
         '
         'adminForm
         '
@@ -394,6 +471,8 @@ Partial Class adminForm
         CType(Me.dgvStaff, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlProfile.ResumeLayout(False)
         Me.pnlProfile.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -428,4 +507,11 @@ Partial Class adminForm
     Friend WithEvents Column7 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column8 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents dgvProduk As System.Windows.Forms.DataGridView
+    Friend WithEvents txtSearch2 As System.Windows.Forms.TextBox
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents lblUsername As System.Windows.Forms.Label
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents Panel2 As System.Windows.Forms.Panel
 End Class

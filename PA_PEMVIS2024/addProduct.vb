@@ -114,13 +114,11 @@ Public Class addProduct
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
-<<<<<<< HEAD
+
     End Sub
 
     Private Sub addProduct_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         koneksi()
 
-=======
->>>>>>> af2083f33491009a51917a3ef637a3548731c658
     End Sub
 End Class

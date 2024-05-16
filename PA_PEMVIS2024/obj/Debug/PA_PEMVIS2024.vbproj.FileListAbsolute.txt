@@ -56,3 +56,5 @@ C:\Users\ACER\Documents\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\
 C:\Users\ACER\Documents\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.staffForm.resources
 C:\Users\ACER\Documents\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.vbproj.GenerateResource.Cache
 C:\Users\ACER\Documents\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.updateProduct.resources
+C:\Users\ahmad\OneDrive\Dokumen\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.updateProduct.resources
+C:\Users\ahmad\OneDrive\Dokumen\Visual Studio 2012\Projects\PA-PEMVIS\PA_PEMVIS2024\obj\Debug\PA_PEMVIS2024.akunStaff.resources

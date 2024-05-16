@@ -85,6 +85,12 @@
     <Compile Include="adminForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="akunStaff.Designer.vb">
+      <DependentUpon>akunStaff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="akunStaff.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="adminForm.resx">
       <DependentUpon>adminForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="akunStaff.resx">
+      <DependentUpon>akunStaff.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>

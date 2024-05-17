@@ -121,4 +121,17 @@ Public Class addProduct
         koneksi()
 
     End Sub
+
+    Private Sub txtHargaProduk_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtHargaProduk.KeyPress
+        If Not Char.IsDigit(e.KeyChar) And e.KeyChar <> ControlChars.Back Then
+            e.Handled = True
+
+        End If
+    End Sub
+
+    
+    Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
+        Me.Close()
+
+    End Sub
 End Class

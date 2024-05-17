@@ -49,6 +49,7 @@ Public Class updateProduct
 
     End Sub
 
+
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         koneksi()
         Dim CMD As MySqlCommand

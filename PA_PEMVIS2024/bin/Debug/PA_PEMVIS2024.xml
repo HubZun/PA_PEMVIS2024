@@ -35,15 +35,15 @@ PA_PEMVIS2024
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-<<<<<<< HEAD
 </member><member name="P:PA_PEMVIS2024.My.Resources.Resources.drink">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:PA_PEMVIS2024.My.Resources.Resources.Home_PA_Pemvis">
-=======
+</member><member name="P:PA_PEMVIS2024.My.Resources.Resources.Home_PA_Pemvis1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:PA_PEMVIS2024.My.Resources.Resources.latte_art">
->>>>>>> f797b077d0464a803295656ee75702fed2c92ed0
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

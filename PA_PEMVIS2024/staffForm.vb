@@ -166,10 +166,12 @@ Public Class staffForm
             Dim waktuSekarang As DateTime = Now
 
             koneksi()
-            cmd = New MySqlCommand("insert into riwayat_pesanan (nama_staff, tanggal, total_harga) values (@nama_staff, @tanggal, @total_harga)", conn)
+            cmd = New MySqlCommand("insert into riwayat_pesanan (nama_staff, tanggal, total_harga, id_staff) values (@nama_staff, @tanggal, @total_harga, @id_staf)", conn)
             cmd.Parameters.AddWithValue("nama_staff", Label1.Text)
             cmd.Parameters.AddWithValue("tanggal", waktuSekarang)
             cmd.Parameters.AddWithValue("total_harga", sum)
+            cmd.Parameters.AddWithValue("id_staf", loginForm.id)
+
             cmd.ExecuteNonQuery()
 
             If bayar = sum Then

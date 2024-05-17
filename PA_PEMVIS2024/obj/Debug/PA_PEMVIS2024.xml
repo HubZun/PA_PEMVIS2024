@@ -23,7 +23,23 @@ PA_PEMVIS2024
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:PA_PEMVIS2024.My.Resources.Resources.coffee">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:PA_PEMVIS2024.My.Resources.Resources.croissant">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:PA_PEMVIS2024.My.Resources.Resources.delete">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:PA_PEMVIS2024.My.Resources.Resources.drink">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:PA_PEMVIS2024.My.Resources.Resources.Home_PA_Pemvis1">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -32,6 +48,10 @@ PA_PEMVIS2024
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member><member name="P:PA_PEMVIS2024.My.Resources.Resources.plus__1_">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:PA_PEMVIS2024.My.Resources.Resources.profile">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

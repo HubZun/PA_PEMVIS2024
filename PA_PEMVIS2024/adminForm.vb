@@ -299,6 +299,8 @@ Public Class adminForm
 
     End Sub
 
+<<<<<<< HEAD
+=======
     Private Sub dgvStaff_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvStaff.CellClick
         If dgvProduk.SelectedRows.Count > 0 Then
             Dim row As DataGridViewRow = dgvStaff.SelectedRows(0)
@@ -314,4 +316,5 @@ Public Class adminForm
 
     End Sub
 
+>>>>>>> f797b077d0464a803295656ee75702fed2c92ed0
 End Class

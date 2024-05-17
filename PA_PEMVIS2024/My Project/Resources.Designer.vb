@@ -63,6 +63,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property _3259934_removebg_preview() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("3259934-removebg-preview", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property cappucino() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("cappucino", resourceCulture)
@@ -103,6 +113,7 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+<<<<<<< HEAD
         Friend ReadOnly Property drink() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("drink", resourceCulture)
@@ -126,6 +137,11 @@ Namespace My.Resources
         Friend ReadOnly Property Home_PA_Pemvis1() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Home_PA_Pemvis1", resourceCulture)
+=======
+        Friend ReadOnly Property latte_art() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("latte-art", resourceCulture)
+>>>>>>> f797b077d0464a803295656ee75702fed2c92ed0
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

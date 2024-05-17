@@ -150,6 +150,12 @@
     <Compile Include="updateProduct.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="updateStaff.Designer.vb">
+      <DependentUpon>updateStaff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="updateStaff.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="addProduct.resx">
@@ -188,6 +194,9 @@
     <EmbeddedResource Include="updateProduct.resx">
       <DependentUpon>updateProduct.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="updateStaff.resx">
+      <DependentUpon>updateStaff.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
@@ -221,6 +230,7 @@
     <None Include="Resources\user-circle-svgrepo-com.png" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <None Include="Resources\profile.png" />
   </ItemGroup>
   <ItemGroup>
@@ -234,6 +244,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Home_PA_Pemvis1.png" />
+=======
+    <None Include="Resources\latte-art.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3259934-removebg-preview.png" />
+>>>>>>> f797b077d0464a803295656ee75702fed2c92ed0
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

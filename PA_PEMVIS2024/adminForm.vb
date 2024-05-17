@@ -14,6 +14,8 @@ Public Class adminForm
 
         pnlOnBtnStf.Height = 0
         pnlOnBtnPrf.Height = 0
+        pnlOnbtnRwt.Height = 0
+
     End Sub
 
 
@@ -23,9 +25,12 @@ Public Class adminForm
         pnlProduk.Visible = False
         pnlProfile.Visible = False
         pnlStaff.Visible = True
+        pnlRiwayat.Visible = False
+
 
         pnlOnBtnPrd.Height = 0
         pnlOnBtnPrf.Height = 0
+        pnlOnbtnRwt.Height = 0
 
     End Sub
     Private Sub btnPrf_Click(sender As Object, e As EventArgs) Handles btnPrf.Click
@@ -35,11 +40,32 @@ Public Class adminForm
         pnlProduk.Visible = False
         pnlProfile.Visible = True
         pnlStaff.Visible = False
+        pnlRiwayat.Visible = False
+
 
         pnlOnBtnPrd.Height = 0
         pnlOnBtnStf.Height = 0
+        pnlOnbtnRwt.Height = 0
+
 
     End Sub
+
+    Private Sub btnRwt_Click(sender As Object, e As EventArgs) Handles btnRwt.Click
+        pnlOnbtnRwt.Height = btnRwt.Height
+        pnlOnbtnRwt.Top = btnRwt.Top
+
+
+        pnlProduk.Visible = False
+        pnlProfile.Visible = False
+        pnlStaff.Visible = False
+        pnlRiwayat.Visible = True
+
+        pnlOnBtnPrd.Height = 0
+        pnlOnBtnStf.Height = 0
+        pnlOnBtnPrf.Height = 0
+
+    End Sub
+
 
 
     Public Sub addItemsFromDb()
@@ -61,7 +87,7 @@ Public Class adminForm
         cmd = New MySqlCommand(q, conn)
         rd = cmd.ExecuteReader
         While rd.Read()
-            dgvStaff.Rows.Add(rd.Item(0), rd.Item(1), rd.Item(3))
+            dgvStaff.Rows.Add(rd.Item(0), rd.Item(1), rd.Item(2), rd.Item(3))
         End While
 
         rd.Close()
@@ -69,13 +95,30 @@ Public Class adminForm
 
     End Sub
 
+    Private Sub addItemsRiwayatFromDb()
+        dgvRiwayat.Rows.Clear()
+        Dim q = "select * from riwayat_pesanan"
+        cmd = New MySqlCommand(q, conn)
+        rd = cmd.ExecuteReader
+        While rd.Read
+            dgvRiwayat.Rows.Add(rd.Item(1), rd.Item(2), rd.Item(3))
+
+
+        End While
+        rd.Close()
+    End Sub
+
     Private Sub admin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         koneksi()
         addItemsFromDb()
         addItemsStaffFromDb()
+        addItemsRiwayatFromDb()
+
         pnlOnBtnStf.Height = 0
         pnlOnBtnPrf.Height = 0
         pnlOnBtnLgt.Height = 0
+        pnlOnbtnRwt.Height = 0
+
 
         name_user()
 
@@ -174,13 +217,10 @@ Public Class adminForm
 
     End Sub
 
-   
 
    
     Private Sub txtSearch2_TextChanged(sender As Object, e As EventArgs) Handles txtSearch2.TextChanged
         If txtSearch2.Text <> Nothing Then
-            koneksi()
-
             Dim q = "select * from user where username like '%" & txtSearch2.Text & "%'"
             cmd = New MySqlCommand(q, conn)
             rd = cmd.ExecuteReader
@@ -212,6 +252,40 @@ Public Class adminForm
 
     End Sub
 
+    Private Sub txtSearchRiwayat_Click(sender As Object, e As EventArgs) Handles txtSearchRiwayat.Click
+        txtSearchRiwayat.Text = ""
+    End Sub
+
+    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles txtSearchRiwayat.TextChanged
+        If txtSearchRiwayat.Text <> Nothing Then
+            Dim q = "select * from riwayat_pesanan where nama_staff like '%" & txtSearchRiwayat.Text & "%'"
+            cmd = New MySqlCommand(q, conn)
+            rd = cmd.ExecuteReader
+
+            If rd.HasRows Then
+                dgvRiwayat.Rows.Clear()
+                While rd.Read
+                    Dim row As New DataGridViewRow()
+                    row.CreateCells(dgvRiwayat)
+                    row.Cells(0).Value = rd("nama_staff")
+                    row.Cells(1).Value = rd("tanggal")
+                    row.Cells(2).Value = rd("total_harga")
+
+
+                    dgvRiwayat.Rows.Add(row)
+
+                End While
+            Else
+                dgvRiwayat.Rows.Clear()
+
+            End If
+            rd.Close()
+        Else
+            addItemsRiwayatFromDb()
+        End If
+
+    End Sub
+
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         adminProfile.Show()
 
@@ -225,4 +299,22 @@ Public Class adminForm
 
     End Sub
 
+<<<<<<< HEAD
+=======
+    Private Sub dgvStaff_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvStaff.CellClick
+        If dgvProduk.SelectedRows.Count > 0 Then
+            Dim row As DataGridViewRow = dgvStaff.SelectedRows(0)
+
+            updateStaff.lblId.Text = row.Cells(0).Value
+            updateStaff.txtUsername.Text = row.Cells(1).Value
+            updateStaff.txtPassword.Text = row.Cells(2).Value
+
+            updateStaff.Show()
+
+
+        End If
+
+    End Sub
+
+>>>>>>> f797b077d0464a803295656ee75702fed2c92ed0
 End Class

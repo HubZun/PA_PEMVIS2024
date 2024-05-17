@@ -49,7 +49,7 @@ Partial Class loginForm
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label2.Location = New System.Drawing.Point(-7, 90)
+        Me.Label2.Location = New System.Drawing.Point(3, 89)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(163, 40)
         Me.Label2.TabIndex = 1
@@ -120,7 +120,7 @@ Partial Class loginForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.PA_PEMVIS2024.My.Resources.Resources.White_Minimal_Furniture_Website_Desktop_Prototype__1_
+        Me.BackgroundImage = Global.PA_PEMVIS2024.My.Resources.Resources.Home_PA_Pemvis1
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(941, 641)
         Me.Controls.Add(Me.Button1)

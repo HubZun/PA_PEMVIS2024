@@ -2,7 +2,7 @@
 
 
 Public Class adminProfile
-    Dim idUser As String = loginForm.id
+    Dim idUser As String = login.id
     Dim empty, valid, isOldPass As Boolean
 
     Private Sub isEmpty()

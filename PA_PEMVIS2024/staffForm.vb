@@ -51,7 +51,7 @@ Public Class staffForm
         panelMenu.Visible = True
         panelKeranjang.Visible = False
         loadData()
-        Label1.Text = loginForm.username
+        Label1.Text = login.username
         AddHandler PrintDocument1.PrintPage, AddressOf Me.PrintDocument1_PrintPage
         Me.PrintPreviewDialog1.Document = Me.PrintDocument1
     End Sub
@@ -97,7 +97,7 @@ Public Class staffForm
         g.DrawString("Rp " & kembalian, font1, b, New Point(500, y))
         y += 30
         g.DrawString("Nama Kasir :", font1, b, New Point(70, y))
-        g.DrawString(loginForm.username, font1, b, New Point(500, y))
+        g.DrawString(login.username, font1, b, New Point(500, y))
         y += 30
 
     End Sub
@@ -170,7 +170,7 @@ Public Class staffForm
             cmd.Parameters.AddWithValue("nama_staff", Label1.Text)
             cmd.Parameters.AddWithValue("tanggal", waktuSekarang)
             cmd.Parameters.AddWithValue("total_harga", sum)
-            cmd.Parameters.AddWithValue("id_staf", loginForm.id)
+            cmd.Parameters.AddWithValue("id_staf", login.id)
 
             cmd.ExecuteNonQuery()
 

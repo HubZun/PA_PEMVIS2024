@@ -125,7 +125,7 @@ Public Class adminForm
     End Sub
 
     Private Sub name_user()
-        cmd = New MySqlCommand("select * from user where id_user = " & loginForm.id & "", conn)
+        cmd = New MySqlCommand("select * from user where id_user = " & login.id & "", conn)
         rd = cmd.ExecuteReader
         While rd.Read
             lblUsername.Text = rd("username")
@@ -294,8 +294,8 @@ Public Class adminForm
     Private Sub btnLgt_Click(sender As Object, e As EventArgs) Handles btnLgt.Click
         Me.Close()
         loginForm.Show()
-        loginForm.txtUsername.Clear()
-        loginForm.txtPassword.Clear()
+        login.txtUsername.Clear()
+        login.txtPassword.Clear()
 
     End Sub
 

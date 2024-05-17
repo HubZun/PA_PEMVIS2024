@@ -21,7 +21,7 @@ Public Class updateStaff
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
         Dim empty = isEmpty()
         If empty Then
-            cmd = New MySqlCommand("update user set username = '" & txtUsername.Text & "', password = '" & txtPassword.Text & "'", conn)
+            cmd = New MySqlCommand("update user set username = '" & txtUsername.Text & "', password = '" & txtPassword.Text & "' where id_user = '" & lblId.Text & "'", conn)
             rd = cmd.ExecuteReader
             MsgBox("berhasil diubah")
 

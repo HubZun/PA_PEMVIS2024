@@ -54,6 +54,7 @@ Public Class staffForm
         Label1.Text = login.username
         AddHandler PrintDocument1.PrintPage, AddressOf Me.PrintDocument1_PrintPage
         Me.PrintPreviewDialog1.Document = Me.PrintDocument1
+        lblUsername.Text = login.username
     End Sub
 
     Private Sub PrintDocument1_PrintPage(sender As Object, ByVal e As System.Drawing.Printing.PrintPageEventArgs)

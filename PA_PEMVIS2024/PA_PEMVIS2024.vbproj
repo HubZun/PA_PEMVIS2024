@@ -132,6 +132,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="profileStaff.Designer.vb">
+      <DependentUpon>profileStaff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="profileStaff.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="staffForm.Designer.vb">
       <DependentUpon>staffForm.vb</DependentUpon>
     </Compile>
@@ -173,6 +179,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="profileStaff.resx">
+      <DependentUpon>profileStaff.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="staffForm.resx">
       <DependentUpon>staffForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -210,6 +219,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user-circle-svgrepo-com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\croissant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

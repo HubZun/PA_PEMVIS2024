@@ -224,4 +224,5 @@ Public Class adminForm
         loginForm.txtPassword.Clear()
 
     End Sub
+
 End Class
